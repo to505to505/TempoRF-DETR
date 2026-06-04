@@ -10,6 +10,7 @@
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{float}
+\usepackage{url}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \raggedbottom
@@ -29,7 +30,7 @@ Maastricht, The Netherlands}
 \maketitle
 
 \begin{abstract}
-Video-based coronary stenosis detection in X-ray angiography promises higher accuracy than single-frame detection by aggregating cardiac and respiratory motion across consecutive frames, but is constrained by labeled data: per-frame box annotations are expensive, and most publicly available stenosis resources are released as single-frame images rather than video sequences. We propose TempoRF-DETR, a video extension of RF-DETR that exchanges context across all frames of a clip in a single forward pass via an Early Temporal Fusion (ETF) module. To compensate for the smaller video dataset, we introduce an image-to-video knowledge distillation scheme: a frozen 2D RF-DETR teacher pre-trained on the union of a single-frame dataset and decoded video frames supervises the video student model per frame via query-aligned distillation (KD-DETR), general-query sampling, and cross-resolution relational contrastive distillation (CRRCD). TempoRF-DETR reaches micro-pooled AP at IoU 0.30 of $0.581$ on the in-distribution test set and transfers without retraining to $0.416$ on the out-of-distribution CADICA dataset, $+0.246$ AP$_{30}$ above the strongest reimplemented video baseline and $+0.063$ above the strongest parameter-efficient alternative.
+Video-based coronary stenosis detection in X-ray angiography promises higher accuracy than single-frame detection by aggregating cardiac and respiratory motion across consecutive frames, but is constrained by labeled data: per-frame box annotations are expensive, and most publicly available stenosis resources are released as single-frame images rather than video sequences. We propose TempoRF-DETR, a video extension of RF-DETR that exchanges context across all frames of a clip in a single forward pass via an Early Temporal Fusion (ETF) module. To compensate for the smaller video dataset, we introduce an image-to-video knowledge distillation scheme: a frozen 2D RF-DETR teacher pre-trained on the union of a single-frame dataset and decoded video frames supervises the video student model per frame via query-aligned distillation (KD-DETR), general-query sampling, and cross-resolution relational contrastive distillation (CRRCD). TempoRF-DETR reaches micro-pooled AP at IoU 0.30 of $0.581$ on the in-distribution test set and transfers without retraining to $0.416$ on the out-of-distribution CADICA dataset, $+0.246$ AP$_{30}$ above the strongest reimplemented video baseline and $+0.063$ above the strongest parameter-efficient alternative. Code and the trained model are available at \url{https://github.com/to505to505/TempoRF-DETR}.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -144,7 +145,7 @@ The total distillation loss is $\mathcal{L}_{\text{distill}} = \mathcal{L}_{\tex
 \section{Experiments and Results}
 \label{sec:experiments}
 
-All experiments are micro-pooled on the held-out test split.
+
 
 \subsection{Ablation: Modules of TempoRF-DETR}
 \label{sec:exp_ablation}
