@@ -12,7 +12,7 @@ wandb/
 
 
 *.ckpt
-
+*.pth
 
 *.aux
 *.fdb_latexmk
