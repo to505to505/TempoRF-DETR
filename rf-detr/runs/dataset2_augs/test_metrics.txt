@@ -1,0 +1,16 @@
+RF-DETR (RFDETRSmall) Test Results
+========================================
+
+Dataset: data/dataset2_split (test split, 1252 images)
+Checkpoint: checkpoint_best_total.pth
+
+--- Metrics ---
+test/AP/0                                0.04905775561928749
+test/F1                                  0.30030643939971924
+test/loss                                8.639335632324219
+test/mAP_50                              0.20066963136196136
+test/mAP_50_95                           0.04905775561928749
+test/mAP_75                              0.004537732806056738
+test/mAR                                 0.28482428193092346
+test/precision                           0.41643059253692627
+test/recall                              0.2348242849111557

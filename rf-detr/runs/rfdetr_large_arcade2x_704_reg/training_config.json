@@ -1,0 +1,191 @@
+{
+  "train_config": {
+    "lr": 0.0001,
+    "lr_encoder": 0.00015,
+    "batch_size": 4,
+    "grad_accum_steps": 8,
+    "auto_batch_target_effective": 16,
+    "auto_batch_max_targets_per_image": 100,
+    "auto_batch_ema_headroom": 0.7,
+    "epochs": 150,
+    "resume": null,
+    "ema_decay": 0.993,
+    "ema_tau": 100,
+    "lr_drop": 100,
+    "checkpoint_interval": 10,
+    "warmup_epochs": 8.0,
+    "lr_vit_layer_decay": 0.8,
+    "lr_component_decay": 0.7,
+    "drop_path": 0.1,
+    "group_detr": 13,
+    "ia_bce_loss": true,
+    "cls_loss_coef": 1.0,
+    "num_select": 300,
+    "dataset_file": "roboflow",
+    "square_resize_div_64": true,
+    "dataset_dir": "/home/dsa/stenosis/data/combined_arcade2x_trainval_dataset2",
+    "output_dir": "/home/dsa/stenosis/rf-detr/runs/rfdetr_large_arcade2x_704_reg",
+    "multi_scale": true,
+    "expanded_scales": true,
+    "do_random_resize_via_padding": false,
+    "use_ema": true,
+    "ema_update_interval": 1,
+    "num_workers": 4,
+    "weight_decay": 0.0001,
+    "early_stopping": true,
+    "early_stopping_patience": 25,
+    "early_stopping_min_delta": 0.001,
+    "early_stopping_use_ema": true,
+    "progress_bar": "rich",
+    "tensorboard": true,
+    "wandb": true,
+    "mlflow": false,
+    "clearml": false,
+    "project": "rfdetr-stenosis",
+    "run": "rfdetr_large_arcade2x_704_reg",
+    "class_names": [
+      "stenosis_0",
+      "stenosis_1"
+    ],
+    "run_test": true,
+    "segmentation_head": false,
+    "eval_max_dets": 500,
+    "eval_interval": 1,
+    "log_per_class_metrics": true,
+    "aug_config": {
+      "HorizontalFlip": {
+        "p": 0.5
+      },
+      "VerticalFlip": {
+        "p": 0.5
+      },
+      "Rotate": {
+        "limit": 20,
+        "p": 0.3
+      },
+      "Affine": {
+        "scale": [
+          0.9,
+          1.1
+        ],
+        "translate_percent": [
+          -0.05,
+          0.05
+        ],
+        "p": 0.3
+      },
+      "Perspective": {
+        "scale": [
+          0.02,
+          0.05
+        ],
+        "p": 0.15
+      },
+      "RandomBrightnessContrast": {
+        "brightness_limit": 0.3,
+        "contrast_limit": 0.3,
+        "p": 0.5
+      },
+      "CLAHE": {
+        "clip_limit": 4.0,
+        "p": 0.3
+      },
+      "RandomGamma": {
+        "gamma_limit": [
+          80,
+          120
+        ],
+        "p": 0.3
+      },
+      "GaussianBlur": {
+        "blur_limit": 3,
+        "p": 0.2
+      },
+      "GaussNoise": {
+        "std_range": [
+          0.01,
+          0.05
+        ],
+        "p": 0.2
+      },
+      "Sharpen": {
+        "alpha": [
+          0.2,
+          0.5
+        ],
+        "lightness": [
+          0.5,
+          1.0
+        ],
+        "p": 0.2
+      }
+    },
+    "accelerator": "auto",
+    "clip_max_norm": 0.1,
+    "seed": 42,
+    "sync_bn": false,
+    "strategy": "auto",
+    "devices": 1,
+    "num_nodes": 1,
+    "fp16_eval": false,
+    "lr_scheduler": "cosine",
+    "lr_min_factor": 0.01,
+    "dont_save_weights": false,
+    "train_log_sync_dist": false,
+    "train_log_on_step": false,
+    "compute_val_loss": true,
+    "compute_test_loss": true,
+    "pin_memory": null,
+    "persistent_workers": null,
+    "prefetch_factor": null
+  },
+  "model_config": {
+    "encoder": "dinov2_windowed_small",
+    "out_feature_indexes": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "dec_layers": 4,
+    "two_stage": true,
+    "projector_scale": [
+      "P4"
+    ],
+    "hidden_dim": 256,
+    "patch_size": 16,
+    "num_windows": 2,
+    "sa_nheads": 8,
+    "ca_nheads": 16,
+    "dec_n_points": 2,
+    "num_queries": 300,
+    "num_select": 300,
+    "bbox_reparam": true,
+    "lite_refpoint_refine": true,
+    "layer_norm": true,
+    "amp": true,
+    "num_classes": 1,
+    "pretrain_weights": "rf-detr-large-2026.pth",
+    "device": "cuda",
+    "resolution": 704,
+    "group_detr": 13,
+    "gradient_checkpointing": false,
+    "compile": false,
+    "fused_optimizer": true,
+    "positional_encoding_size": 44,
+    "ia_bce_loss": true,
+    "cls_loss_coef": 1.0,
+    "segmentation_head": false,
+    "mask_downsample_ratio": 4,
+    "backbone_lora": false,
+    "freeze_encoder": false,
+    "license": "Apache-2.0",
+    "model_name": "RFDETRLarge"
+  },
+  "model_config_type": "RFDETRLargeConfig",
+  "class_names": [
+    "stenosis_0",
+    "stenosis_1"
+  ],
+  "num_classes": 2
+}

@@ -1,0 +1,18 @@
+DetNet Evaluation – detnet_v1_T5
+Run dir: /home/dsa/stenosis/detnet/runs/detnet_v1_T5
+
+================================================================================
+DATASET: dataset2_split_test
+================================================================================
+  Dataset : dataset2_split_test  (31 videos, 1128 centre frames)
+
+  MACRO (mean/video)  AP30=0.4238  AP50=0.2343  AP75=0.0216  AP5095=0.0713  F1=0.2954  Frag=1.77  FragRate=0.0432
+  MICRO (pooled)      AP30=0.3283  AP50=0.1299  AP75=0.0070  AP5095=0.0371  F1=0.2310  P=0.2762  R=0.1986  thr=0.5800  Frag=55  FragRate=0.0488
+
+================================================================================
+DATASET: cadica_50plus_new
+================================================================================
+  Dataset : cadica_50plus_new  (160 videos, 1614 centre frames)
+
+  MACRO (mean/video)  AP30=0.1751  AP50=0.0663  AP75=0.0035  AP5095=0.0180  F1=0.1028  Frag=0.20  FragRate=0.0135
+  MICRO (pooled)      AP30=0.0887  AP50=0.0150  AP75=0.0002  AP5095=0.0029  F1=0.0814  P=0.1008  R=0.0683  thr=0.2900  Frag=32  FragRate=0.0140

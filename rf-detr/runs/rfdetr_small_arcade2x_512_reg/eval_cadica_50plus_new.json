@@ -1,0 +1,21 @@
+{
+  "mAP@0.25": 0.4243,
+  "mAR@0.25": 0.9689,
+  "mAP@0.5": 0.1353,
+  "mAR@0.5": 0.7996,
+  "recall@IoU0.25_conf0.15": 0.6106,
+  "precision@IoU0.25_conf0.15": 0.3048,
+  "f1@IoU0.25_conf0.15": 0.4066,
+  "matched_gt@IoU0.25_conf0.15": 1886,
+  "total_gt": 3089,
+  "recall@IoU0.3_conf0.15": 0.5565,
+  "precision@IoU0.3_conf0.15": 0.2694,
+  "f1@IoU0.3_conf0.15": 0.363,
+  "matched_gt@IoU0.3_conf0.15": 1719,
+  "recall@IoU0.5_conf0.15": 0.3341,
+  "precision@IoU0.5_conf0.15": 0.1498,
+  "f1@IoU0.5_conf0.15": 0.2069,
+  "matched_gt@IoU0.5_conf0.15": 1032,
+  "name": "rfdetr_small_arcade2x_512_reg",
+  "num_images": 2215
+}

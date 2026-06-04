@@ -1,0 +1,17 @@
+RF-DETR (RFDETRSmall) Metrics on cadica_split_50plus train
+========================================
+
+Dataset: cadica_split_50plus train (1465 images, single-label)
+Checkpoint: checkpoint_best_total.pth
+Training: dataset2_split only, num_classes=1
+
+--- Metrics ---
+test/AP/0 (Stenosis)                     0.011136091314256191
+test/F1                                  0.12034126371145248
+test/loss                                7.071141242980957
+test/mAP_50                              0.041172172874212265
+test/mAP_50_95                           0.011136091314256191
+test/mAP_75                              0.0012128395028412342
+test/mAR                                 0.24068240821361542
+test/precision                           0.09146757423877716
+test/recall                              0.17585301399230957

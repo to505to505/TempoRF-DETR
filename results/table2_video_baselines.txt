@@ -1,0 +1,30 @@
+================================================================================
+TABLE II — Comparison with video stenosis detectors (micro-pooled)
+================================================================================
+
+                              RIPCID-test (in-distribution)               CADICA (out-of-distribution)
+Model                       AP30    AP50    P30    R30    F1_30    p    | AP30    AP50    P30    R30    F1_30    p
+----------------------------------------------------------------------------------------------------------------------
+Stenosis-DetNet (reimpl.)   0.328  0.130  0.454  0.371  0.408  0.012   | 0.089  0.015  0.211  0.199  0.205  <0.001
+PS-STT (reimpl.)            0.271  0.099  0.399  0.321  0.356  0.004   | 0.060  0.009  0.161  0.156  0.159  <0.001
+STQD-Det (reimpl.)          0.377  0.169  0.569  0.497  0.531   0.32   | 0.170  0.044  0.437  0.283  0.344  <0.001
+TempoRF-DETR (ours)         0.581  0.247  0.710  0.515  0.597   ---    | 0.416  0.111  0.609  0.383  0.470   ---
+======================================================================================================================
+
+VERIFICATION — repo run outputs vs paper:
+
+   Model              | Paper AP30 (in/OOD) | Repo (ablation_results.txt MICRO) | Match
+   -------------------+---------------------+-----------------------------------+-------
+   Stenosis-DetNet    | 0.328 / 0.089       | 0.3283 / 0.0887                   |  OK
+   PS-STT             | 0.271 / 0.060       | 0.2708 / 0.0604                   |  OK
+   STQD-Det           | 0.377 / 0.170       | 0.3772 / 0.1703                   |  OK
+   TempoRF-DETR full  | 0.581 / 0.416       | 0.5813 / 0.4161                   |  OK
+
+All rows reproduce to within 0.0005 AP30. p-values are Wilcoxon signed-rank,
+two-sided, paired at the video level (one video = one patient cluster).
+
+For full statistical analysis (incl. bootstrap CIs) see:
+  - results/wilcoxon_table2_vs_baselines.txt
+  - results/wilcoxon_per_model_bootstrap.txt
+
+================================================================================

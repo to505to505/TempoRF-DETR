@@ -1,0 +1,78 @@
+STQD-Det Best Results
+========================================
+
+Best mAP30:    0.20552
+Best mAP50:    0.10564
+Best epoch:    12
+
+--- Metrics ---
+AP@0.3                               0.20552371943904316
+AP@0.5                               0.10564230364547628
+AP@0.5:0.95                          0.02830677981755475
+AP@0.75                              0.0042493404651738715
+F1                                   0.22844344904815228
+best_conf                            0.53
+n_centre_frames                      1126
+precision                            0.3090909090909091
+recall                               0.1811722912966252
+val_loss                             0.0
+
+--- Config ---
+T                                    5
+amp                                  True
+backbone_frozen_bn                   True
+batch_size                           1
+cls_weight                           2.0
+consistency_beta                     1.0
+consistency_weight                   1.0
+data_root                            data/dataset2_split
+decoder_dim_feedforward              2048
+decoder_dropout                      0.0
+decoder_dynamic_dim                  64
+decoder_dynamic_num                  2
+decoder_num_heads                    6
+decoder_roi_size                     7
+diffusion_T_steps                    1000
+diffusion_sampling_steps             1
+early_stop_enabled                   False
+early_stop_min_delta                 0.0
+early_stop_patience                  6
+ema_decay                            0.999
+ema_enabled                          True
+epochs                               15
+eval_interval                        1
+focal_alpha                          0.25
+focal_gamma                          2.0
+fpn_out_channels                     256
+gfe_dc_kernels                       4
+gfe_dropout                          0.0
+gfe_heads                            8
+giou_weight                          2.0
+grad_accum_steps                     4
+img_size                             512
+l1_weight                            5.0
+log_interval                         50
+lr                                   2.5e-05
+lr_gamma                             0.1
+lr_schedule                          cosine
+lr_step_milestones                   (30, 40)
+num_classes                          1
+num_proposals                        300
+num_workers                          4
+output_dir                           rfdetr_video/runs
+pixel_mean                           (0.485, 0.456, 0.406)
+pixel_std                            (0.229, 0.224, 0.225)
+run_name                             stqd_det_T5_dataset2
+seed                                 42
+selection_smooth_k                   3
+selection_weights                    (0.5, 0.3, 0.2)
+sequential_alpha                     0.01
+sigma_scale                          2.0
+stfs_alpha_pad                       2.0
+stfs_conf_thresh                     0.5
+stfs_enabled                         True
+stfs_iou_match                       0.0001
+wandb_enabled                        False
+wandb_project                        stqd-det
+warmup_iters                         500
+weight_decay                         0.0001

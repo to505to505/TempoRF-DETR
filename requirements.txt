@@ -1,0 +1,40 @@
+# Core deep learning
+# For a specific CUDA build (tested: CUDA 11.8 / 12.x on an RTX 3060), install the
+# matching torch/torchvision wheels first per https://pytorch.org/get-started/locally/.
+torch>=2.0
+torchvision>=0.15
+timm>=0.9.0
+
+# Numerics
+numpy<2.0
+scipy>=1.10
+
+# Vision / augmentation
+Pillow>=9.0
+opencv-python-headless>=4.8
+albumentations>=2.0
+cupy-cuda12x>=13.0
+
+# Data handling
+pandas>=2.0
+polars
+
+# RF-DETR training stack
+rfdetr>=1.6.0
+pytorch_lightning>=2.0
+pycocotools
+faster-coco-eval
+rich>=13.0
+
+# Logging / experiment tracking
+tqdm>=4.60
+matplotlib>=3.5
+tensorboard>=2.14
+wandb
+b2
+
+# Tests (README section 8 smoke tests)
+pytest>=7.0
+
+# Dataset download (README section 4 ARCADE snapshot_download)
+huggingface_hub>=0.20

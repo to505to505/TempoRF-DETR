@@ -1,0 +1,30 @@
+STFS Ablation Tests – stqd_det_T5_dataset2
+Run dir: /home/dsa/stenosis/rfdetr_video/runs/stqd_det_T5_dataset2
+
+================================================================================
+ABLATION: Baseline (original config)
+overrides: (none)
+================================================================================
+  Dataset : cadica_50plus_new  (160 videos, 1614 centre frames)
+  Ablation: Baseline (original config)
+
+  MACRO (mean/video)  AP30=0.3273  AP50=0.1381  AP75=0.0095  AP5095=0.0401  F1=0.1949  Frag=0.25  FragRate=0.0185
+  MICRO (pooled)      AP30=0.1703  AP50=0.0438  AP75=0.0006  AP5095=0.0093  F1=0.1661  P=0.2118  R=0.1366  thr=0.3100  Frag=40  FragRate=0.0175
+  Dataset : dataset2_split_test  (31 videos, 1128 centre frames)
+  Ablation: Baseline (original config)
+
+  MACRO (mean/video)  AP30=0.5309  AP50=0.3239  AP75=0.0142  AP5095=0.0927  F1=0.3935  Frag=1.71  FragRate=0.0422
+  MICRO (pooled)      AP30=0.3772  AP50=0.1686  AP75=0.0030  AP5095=0.0400  F1=0.3351  P=0.3642  R=0.3103  thr=0.3800  Frag=53  FragRate=0.0470
+====================================================================================================
+COMPARISON TABLE  (MICRO pooled metrics)
+====================================================================================================
+
+Dataset: cadica_50plus_new
+  Ablation                                      AP30    AP50    AP75      F1       P       R   Frag   FragRt
+  ----------------------------------------------------------------------------------------------------------
+  Baseline (original config)                  0.1703  0.0438  0.0006  0.1661  0.2118  0.1366     40   0.0175
+
+Dataset: dataset2_split_test
+  Ablation                                      AP30    AP50    AP75      F1       P       R   Frag   FragRt
+  ----------------------------------------------------------------------------------------------------------
+  Baseline (original config)                  0.3772  0.1686  0.0030  0.3351  0.3642  0.3103     53   0.0470

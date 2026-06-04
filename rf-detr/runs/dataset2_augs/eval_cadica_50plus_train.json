@@ -1,0 +1,18 @@
+{
+  "name": "cadica_50plus_train",
+  "num_images": 1465,
+  "mAP@0.25": 0.1279,
+  "mAR@0.25": 0.9265,
+  "mAP@0.5": 0.0409,
+  "mAR@0.5": 0.5381,
+  "recall@IoU0.25_conf0.15": 0.4475,
+  "precision@IoU0.25_conf0.15": 0.0816,
+  "matched_gt@IoU0.25_conf0.15": 341,
+  "total_gt": 762,
+  "recall@IoU0.3_conf0.15": 0.4042,
+  "precision@IoU0.3_conf0.15": 0.0733,
+  "matched_gt@IoU0.3_conf0.15": 308,
+  "recall@IoU0.5_conf0.15": 0.2598,
+  "precision@IoU0.5_conf0.15": 0.0465,
+  "matched_gt@IoU0.5_conf0.15": 198
+}

@@ -1,0 +1,55 @@
+============================================================
+Video RF-DETR distillation notes after cleanup
+============================================================
+
+Current direction
+-----------------
+The video package now keeps the detector path close to base RF-DETR:
+  frames -> backbone -> optional ETF -> transformer decoder -> heads
+
+The model predicts every frame in the T-frame window and trains detection
+loss on all B*T frames. ETF remains available as the temporal feature-mixing
+module.
+
+Distillation scope
+------------------
+The frozen 2-D teacher is still used per frame. Its decoder inputs are
+captured and injected into the student decoder in KD branches so teacher and
+student query slots stay aligned.
+
+Branch summary
+--------------
+Branch 1:
+  student detection over all frames
+  optional count consistency loss
+
+Branch 2:
+  teacher specific queries
+  KD-DETR loss
+  optional CRRCD loss
+
+Branch 3:
+  sampled general queries
+  weighted KD-DETR loss
+
+Centre-frame KD
+---------------
+The centre-frame option remains useful when matching prior single-frame
+teacher behavior. It restricts only KD branches to T_kd=1. Detection training
+continues to use the full video window.
+
+Recommended baseline names
+--------------------------
+video_etf
+video_crrcd_etf
+video_crrcd_etf_centreKD
+video_noetf
+
+Open comparisons
+----------------
+Compare these axes:
+  ETF off vs on
+  distillation off vs KD specific
+  KD specific vs KD specific + general
+  CRRCD off vs on
+  all-frame metrics vs centre-frame headline metrics

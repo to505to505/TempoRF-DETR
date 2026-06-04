@@ -1,0 +1,128 @@
+================================================================================
+  VIDEO RF-DETR: CURRENT ARCHITECTURE
+  Package: rfdetr_video/
+  Updated: May 2026
+================================================================================
+
+Goal
+----
+Video RF-DETR trains RF-DETR on windows of T angiography frames while
+keeping the detector path simple and close to the base RF-DETR model.
+The model predicts every frame in the window in one forward pass.
+
+Input / output
+--------------
+Input frames:
+  frames: (B, T, 3, H, W)
+
+The model flattens the window to B*T images for the RF-DETR backbone and
+transformer, then reshapes predictions back to:
+  pred_logits: (B, T, Q, K)
+  pred_boxes:  (B, T, Q, 4)
+
+Core pipeline
+-------------
+  frames (B,T,3,H,W)
+      |
+      v
+  reshape to (B*T,3,H,W)
+      |
+      v
+  DINOv2 backbone + RF-DETR projector
+      |
+      v
+  optional ETF: temporal self-attention on feature maps
+      |
+      v
+  standard RF-DETR transformer decoder
+      |
+      v
+  standard RF-DETR class and box heads
+      |
+      v
+  reshape to (B,T,Q,*)
+
+Early Temporal Fusion (ETF)
+---------------------------
+ETF is the only temporal feature-mixing module in the model.
+It is optional and controlled by:
+  etf_enabled: bool = False
+  etf_heads: int = 8
+  etf_dropout: float = 0.0
+  etf_spatial_radius: int = 0
+
+With etf_spatial_radius=0, ETF keeps the original temporal-only behavior.
+For each backbone feature level src with shape (B*T, C, h, w):
+  1. reshape to (B*h*w, T, C)
+  2. apply LayerNorm + MultiheadAttention across the T axis
+  3. add the residual and reshape back to (B*T, C, h, w)
+
+With etf_spatial_radius=1, each query token at one spatial position keeps
+the same (B*h*w, T, C) query sequence, but its key/value tokens come from
+the 3x3 spatial window around that position in every frame:
+  key/value length = T * (2*radius + 1)^2 = T * 9
+
+Out-of-image neighbours at feature-map borders are masked before softmax,
+so corner positions attend only to valid in-image tokens.
+
+The attention out projection is zero-initialised, so ETF starts as an
+identity residual block and can be enabled safely from pretrained weights.
+
+Training losses
+---------------
+Detection loss:
+  The standard RF-DETR SetCriterion is applied to every frame by flattening
+  predictions from (B,T,Q,*) to (B*T,Q,*). Targets are flattened in the same
+  order from targets[b][t].
+
+Count consistency loss:
+  L_num penalises flickering object counts inside one T-frame window.
+  It computes a differentiable soft count per frame and compares each count
+  to the median count of the same window.
+
+Optional distillation losses:
+  KD specific sampling uses teacher query slots.
+  KD general sampling uses sampled query slots.
+  CRRCD compares teacher/student decoder hidden-state relations per frame.
+  distill_frame_offsets can restrict KD/CRRCD to selected offsets around the
+  centre frame, e.g. (-1, 1) for the immediate left and right neighbours only.
+
+Query modes
+-----------
+student:
+  Uses the student learnable query embeddings and returns (B,T,Q,*).
+
+teacher:
+  Uses registered teacher query embeddings and optional decoder input
+  injection for KD-DETR slot alignment. Returns (B*T,Q,*).
+
+general:
+  Uses sampled general queries for KD general sampling. Returns (B*T,Q,*).
+
+Dataset
+-------
+VideoStenosisDataset returns:
+  images:  (T, 3, img_size, img_size)
+  targets: list of T dictionaries with per-frame boxes and labels
+
+When distillation is enabled, it also returns teacher frames:
+  teacher: (T, 3, distill_teacher_resolution, distill_teacher_resolution)
+
+The same geometric replay is used for student and teacher frames so their
+spatial transforms stay aligned.
+
+Evaluation
+----------
+Evaluation runs query_mode="student" and reports:
+  - centre-frame metrics for parity with older single-frame comparisons
+  - all-frame metrics with the all/ prefix
+
+Checkpoints
+-----------
+Training writes to rfdetr_video/runs/<run_name>/:
+  best.pth
+  last.pth
+  config.json
+  best.txt
+  history.json
+  train.csv

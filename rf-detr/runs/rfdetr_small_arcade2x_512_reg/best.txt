@@ -1,0 +1,40 @@
+RF-DETR (RFDETRSmall) Best Results
+========================================
+
+Best mAP50:    0.00000
+Best epoch:    N/A
+
+--- Metrics ---
+
+--- Config ---
+aug_config                           {'HorizontalFlip': {'p': 0.5}, 'VerticalFlip': {'p': 0.5}, 'Rotate': {'limit': 20, 'p': 0.3}, 'Affine': {'scale': (0.9, 1.1), 'translate_percent': (-0.05, 0.05), 'p': 0.3}, 'Perspective': {'scale': (0.02, 0.05), 'p': 0.15}, 'RandomBrightnessContrast': {'brightness_limit': 0.3, 'contrast_limit': 0.3, 'p': 0.5}, 'CLAHE': {'clip_limit': 4.0, 'p': 0.3}, 'RandomGamma': {'gamma_limit': (80, 120), 'p': 0.3}, 'GaussianBlur': {'blur_limit': 3, 'p': 0.2}, 'GaussNoise': {'std_range': (0.01, 0.05), 'p': 0.2}, 'Sharpen': {'alpha': (0.2, 0.5), 'lightness': (0.5, 1.0), 'p': 0.2}}
+batch_size                           4
+checkpoint_interval                  10
+class_names                          ['stenosis_0', 'stenosis_1']
+dataset_dir                          data/combined_arcade2x_trainval_dataset2
+drop_path                            0.1
+early_stopping                       True
+early_stopping_patience              25
+early_stopping_use_ema               True
+epochs                               150
+grad_accum_steps                     8
+log_per_class_metrics                True
+lr                                   0.0001
+lr_encoder                           0.00015
+lr_min_factor                        0.01
+lr_scheduler                         cosine
+model_size                           small
+model_variant                        RFDETRSmall
+num_workers                          4
+output_dir                           /home/dsa/stenosis/rfdetr_runs/rfdetr_small_arcade2x_512_reg
+pretrained_backbone                  DINOv2 (default)
+progress_bar                         rich
+project                              rfdetr-stenosis
+run                                  rfdetr_small_arcade2x_512_reg
+run_test                             True
+seed                                 42
+tensorboard                          True
+use_ema                              True
+wandb                                True
+warmup_epochs                        8.0
+weight_decay                         0.0001

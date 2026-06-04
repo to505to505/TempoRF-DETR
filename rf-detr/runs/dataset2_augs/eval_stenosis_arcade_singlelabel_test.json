@@ -1,0 +1,18 @@
+{
+  "name": "stenosis_arcade_singlelabel_test",
+  "num_images": 300,
+  "mAP@0.25": 0.1283,
+  "mAR@0.25": 0.7961,
+  "mAP@0.5": 0.002,
+  "mAR@0.5": 0.1578,
+  "recall@IoU0.25_conf0.15": 0.3714,
+  "precision@IoU0.25_conf0.15": 0.146,
+  "matched_gt@IoU0.25_conf0.15": 153,
+  "total_gt": 412,
+  "recall@IoU0.3_conf0.15": 0.2549,
+  "precision@IoU0.3_conf0.15": 0.0979,
+  "matched_gt@IoU0.3_conf0.15": 105,
+  "recall@IoU0.5_conf0.15": 0.0413,
+  "precision@IoU0.5_conf0.15": 0.0154,
+  "matched_gt@IoU0.5_conf0.15": 17
+}

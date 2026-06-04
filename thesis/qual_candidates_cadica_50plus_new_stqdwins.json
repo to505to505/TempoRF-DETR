@@ -1,0 +1,338 @@
+[
+  {
+    "key": [
+      "p12_v7",
+      14
+    ],
+    "score": 1.8255662310244272,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.9127831155122136,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p12_v7_00029.png",
+    "gt_area_pct": 0.41389310359954834
+  },
+  {
+    "key": [
+      "p12_v8",
+      17
+    ],
+    "score": 1.544749931251009,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.8223749656255045,
+    "n_gt": 2,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p12_v8_00040.png",
+    "gt_area_pct": 0.5084991455078125
+  },
+  {
+    "key": [
+      "p30_v5",
+      0
+    ],
+    "score": 1.5431700008909954,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.7715850004454977,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p30_v5_00013.png",
+    "gt_area_pct": 0.24795354902744293
+  },
+  {
+    "key": [
+      "p12_v7",
+      12
+    ],
+    "score": 1.4922050123930362,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.7461025061965181,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p12_v7_00027.png",
+    "gt_area_pct": 0.3097582459449768
+  },
+  {
+    "key": [
+      "p24_v18",
+      1
+    ],
+    "score": 1.491737596399696,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.745868798199848,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p24_v18_00022.png",
+    "gt_area_pct": 0.6225563287734985
+  },
+  {
+    "key": [
+      "p12_v7",
+      1
+    ],
+    "score": 1.3724793908936976,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.6862396954468488,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p12_v7_00016.png",
+    "gt_area_pct": 0.3051750361919403
+  },
+  {
+    "key": [
+      "p14_v2",
+      1
+    ],
+    "score": 1.3246608962039699,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.712330448101985,
+    "n_gt": 2,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p14_v2_00019.png",
+    "gt_area_pct": 0.9506242275238037
+  },
+  {
+    "key": [
+      "p12_v2",
+      13
+    ],
+    "score": 1.3206476454104532,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.6603238227052266,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p12_v2_00028.png",
+    "gt_area_pct": 0.21934513747692108
+  },
+  {
+    "key": [
+      "p22_v22",
+      0
+    ],
+    "score": 1.315329485689627,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.6576647428448135,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p22_v22_00031.png",
+    "gt_area_pct": 0.42458096146583557
+  },
+  {
+    "key": [
+      "p12_v2",
+      8
+    ],
+    "score": 1.2759531722883914,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.6379765861441957,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p12_v2_00023.png",
+    "gt_area_pct": 0.21934513747692108
+  },
+  {
+    "key": [
+      "p18_v8",
+      2
+    ],
+    "score": 1.2472527205262323,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.6736263602631162,
+    "n_gt": 2,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p18_v8_00027.png",
+    "gt_area_pct": 0.9670248031616211
+  },
+  {
+    "key": [
+      "p23_v18",
+      5
+    ],
+    "score": 1.203497978555644,
+    "best_t_iou": 0.09508617811158099,
+    "best_s_iou": 0.6730636228615078,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p23_v18_00020.png",
+    "gt_area_pct": 0.5630444288253784
+  },
+  {
+    "key": [
+      "p25_v17",
+      2
+    ],
+    "score": 1.1978666544674106,
+    "best_t_iou": 0.3297181145855884,
+    "best_s_iou": 0.8462219131728966,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p25_v17_00026.png",
+    "gt_area_pct": 0.2807624638080597
+  },
+  {
+    "key": [
+      "p30_v5",
+      5
+    ],
+    "score": 1.1938770459605987,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.5969385229802994,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p30_v5_00018.png",
+    "gt_area_pct": 0.41198450326919556
+  },
+  {
+    "key": [
+      "p18_v8",
+      9
+    ],
+    "score": 1.1421393816665255,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.6210696908332628,
+    "n_gt": 2,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p18_v8_00036.png",
+    "gt_area_pct": 0.7724824547767639
+  },
+  {
+    "key": [
+      "p21_v8",
+      4
+    ],
+    "score": 1.1105787672231775,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.5552893836115887,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p21_v8_00023.png",
+    "gt_area_pct": 0.4516623914241791
+  },
+  {
+    "key": [
+      "p12_v7",
+      6
+    ],
+    "score": 1.1060345503276534,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.5530172751638267,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p12_v7_00021.png",
+    "gt_area_pct": 0.20179855823516846
+  },
+  {
+    "key": [
+      "p23_v5",
+      6
+    ],
+    "score": 1.100146384613526,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.550073192306763,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p23_v5_00025.png",
+    "gt_area_pct": 0.5615249276161194
+  },
+  {
+    "key": [
+      "p24_v3",
+      5
+    ],
+    "score": 1.0815735512152513,
+    "best_t_iou": 0.24299885925021852,
+    "best_s_iou": 0.7230359200452895,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p24_v3_00033.png",
+    "gt_area_pct": 0.13160793483257294
+  },
+  {
+    "key": [
+      "p15_v2",
+      16
+    ],
+    "score": 1.0792139854410565,
+    "best_t_iou": 0.1700863129055745,
+    "best_s_iou": 0.7671717273997091,
+    "n_gt": 3,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p15_v2_00027.png",
+    "gt_area_pct": 2.34144926071167
+  },
+  {
+    "key": [
+      "p24_v3",
+      13
+    ],
+    "score": 1.0709730816257652,
+    "best_t_iou": 0.33407357340843885,
+    "best_s_iou": 0.7860417208692118,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p24_v3_00041.png",
+    "gt_area_pct": 0.14877310395240784
+  },
+  {
+    "key": [
+      "p15_v3",
+      8
+    ],
+    "score": 1.0473810614885393,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.5736905307442697,
+    "n_gt": 2,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p15_v3_00026.png",
+    "gt_area_pct": 0.7854487895965576
+  },
+  {
+    "key": [
+      "p30_v5",
+      6
+    ],
+    "score": 1.0305122314606405,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.5152561157303203,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p30_v5_00019.png",
+    "gt_area_pct": 0.39672666788101196
+  },
+  {
+    "key": [
+      "p21_v8",
+      3
+    ],
+    "score": 1.0294264667728084,
+    "best_t_iou": 0.0,
+    "best_s_iou": 0.5147132333864042,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/cadica_50plus_new/images/p21_v8_00022.png",
+    "gt_area_pct": 0.43754881620407104
+  }
+]

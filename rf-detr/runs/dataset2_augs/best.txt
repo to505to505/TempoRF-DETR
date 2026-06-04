@@ -1,0 +1,49 @@
+RF-DETR (RFDETRSmall) Best Results
+========================================
+
+Best mAP50-95: 0.04815
+Best epoch:    5
+
+--- Metrics ---
+val/AP/Stenosis                      0.048147190362215
+val/F1                               0.263896107673645
+val/ema_mAP_50                       0.1884430348873138
+val/ema_mAP_50_95                    0.0505605787038803
+val/ema_mAR                          0.2640350759029388
+val/loss                             8.677650451660156
+val/mAP_50                           0.183466836810112
+val/mAP_50_95                        0.048147190362215
+val/mAP_75                           0.0117776961997151
+val/mAR                              0.2441786229610443
+val/precision                        0.378539502620697
+val/recall                           0.2025518268346786
+
+--- Config ---
+aug_config                           {'HorizontalFlip': {'p': 0.5}, 'VerticalFlip': {'p': 0.5}, 'Rotate': {'limit': 20, 'p': 0.3}, 'Affine': {'scale': (0.9, 1.1), 'translate_percent': (-0.05, 0.05), 'p': 0.3}, 'Perspective': {'scale': (0.02, 0.05), 'p': 0.15}, 'RandomBrightnessContrast': {'brightness_limit': 0.3, 'contrast_limit': 0.3, 'p': 0.5}, 'CLAHE': {'clip_limit': 4.0, 'p': 0.3}, 'RandomGamma': {'gamma_limit': (80, 120), 'p': 0.3}, 'GaussianBlur': {'blur_limit': 3, 'p': 0.2}, 'GaussNoise': {'std_range': (0.01, 0.05), 'p': 0.2}, 'Sharpen': {'alpha': (0.2, 0.5), 'lightness': (0.5, 1.0), 'p': 0.2}}
+batch_size                           16
+checkpoint_interval                  10
+class_names                          ['stenosis_0', 'stenosis_1']
+dataset_dir                          data/dataset2_split
+early_stopping                       True
+early_stopping_patience              20
+epochs                               100
+grad_accum_steps                     4
+log_per_class_metrics                True
+lr                                   0.0001
+lr_encoder                           0.00015
+lr_scheduler                         cosine
+model_size                           small
+model_variant                        RFDETRSmall
+num_workers                          4
+output_dir                           /workspace/stenosis/rfdetr_runs/rfdetr_small_dataset2_split_augs
+pretrained_backbone                  DINOv2 (default)
+progress_bar                         rich
+project                              rfdetr-stenosis
+run                                  rfdetr_small_dataset2_split_augs
+run_test                             True
+seed                                 42
+tensorboard                          True
+use_ema                              True
+wandb                                True
+warmup_epochs                        5.0
+weight_decay                         0.0001

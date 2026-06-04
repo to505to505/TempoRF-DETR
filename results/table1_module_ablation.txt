@@ -1,0 +1,35 @@
+================================================================================
+TABLE I — Module ablation, micro-pooled AP30
+================================================================================
+Row | Model                                | RIPCID-test | CADICA (OOD)
+----+--------------------------------------+-------------+----------------
+  1 | 2D RF-DETR-S (RIPCID only)           |    0.395    |    0.227
+  2 | 2D RF-DETR-S (RIPCID + ARCADE)       |    0.445    |    0.390
+  3 | 2D RF-DETR-L (R+A), teacher          |    0.460    |    0.401
+----+--------------------------------------+-------------+----------------
+  4 | Video ETF (RIPCID-only init)         |    0.471    |    0.241
+----+--------------------------------------+-------------+----------------
+  5 | Video ETF (R+A init)                 |    0.582    |    0.370
+  6 |   + KD                               |    0.543    |    0.395
+  7 |   + KD + CRRCD (full)                |    0.581    |    0.416
+================================================================================
+
+VERIFICATION — repo run outputs vs paper:
+
+   Row | Run dir                                                | Paper        | Repo (ablation_results.txt)  | Match
+   ----+--------------------------------------------------------+--------------+------------------------------+-------
+   1   | rf-detr/runs/dataset2_augs                             | 0.395/0.227  | 0.395/0.227                  |  OK
+   2   | rf-detr/runs/rfdetr_small_arcade2x_512_reg             | 0.445/0.390  | 0.445/0.390                  |  OK
+   3   | rf-detr/runs/rfdetr_large_arcade2x_704_reg             | 0.460/0.401  | 0.460/0.401                  |  OK
+   4   | rfdetr_video/runs/video_5_etf_consistency_dataset2     | 0.471/0.241  | 0.4714/0.2410                |  OK
+   5   | rfdetr_video/runs/video_5_etf_consistency              | 0.582/0.370  | 0.5818/0.3697                |  OK
+   6   | rfdetr_video/runs/video_5_etf_consistency_distill      | 0.543/0.395  | 0.5429/0.3950                |  OK
+   7   | rfdetr_video/runs/video_overfit_R1                     | 0.581/0.416  | 0.5813/0.4161                |  OK
+
+All seven rows of Table I reproduce to within 0.0005 AP30. Numbers in the "Repo"
+column are taken from each run's ablation_results.txt MICRO (pooled) line.
+
+To regenerate Row 7 from the saved best.pth in this submission:
+    python scripts/eval_video_run.py --run rfdetr_video/runs/video_overfit_R1
+
+================================================================================

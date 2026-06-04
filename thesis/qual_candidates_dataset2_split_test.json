@@ -1,0 +1,338 @@
+[
+  {
+    "key": [
+      "14_096_v2",
+      16
+    ],
+    "score": 1.7957124919632579,
+    "best_t_iou": 0.8978562459816289,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_096_2_0028_bmp_jpg.rf.d85129ec97bc1c17060b6495cc0d257b.jpg",
+    "gt_area_pct": 0.2490234375
+  },
+  {
+    "key": [
+      "14_029_v1",
+      19
+    ],
+    "score": 1.6720376160920036,
+    "best_t_iou": 0.8360188080460018,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 0,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_029_1_0051_bmp_jpg.rf.e1b7ab97bd76c524d68e7d69d2d935cc.jpg",
+    "gt_area_pct": 0.3240966796875
+  },
+  {
+    "key": [
+      "14_066_v7",
+      13
+    ],
+    "score": 1.6476623572834033,
+    "best_t_iou": 0.8238311786417016,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0050_bmp_jpg.rf.b57fde4111996ffd0b4e27f7da6b4c6a.jpg",
+    "gt_area_pct": 0.262451171875
+  },
+  {
+    "key": [
+      "14_002_v8",
+      11
+    ],
+    "score": 1.636271425998104,
+    "best_t_iou": 0.818135712999052,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_002_8_0021_bmp_jpg.rf.33e5146ec9dc25d82a56e8c474bef57c.jpg",
+    "gt_area_pct": 0.310302734375
+  },
+  {
+    "key": [
+      "14_066_v7",
+      11
+    ],
+    "score": 1.588029632361161,
+    "best_t_iou": 0.7940148161805805,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0048_bmp_jpg.rf.462515322828cb48a99650463d8d6738.jpg",
+    "gt_area_pct": 0.2431640625
+  },
+  {
+    "key": [
+      "14_002_v8",
+      9
+    ],
+    "score": 1.5853640263366773,
+    "best_t_iou": 0.7926820131683386,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_002_8_0019_bmp_jpg.rf.fcb44d3145ceb9fe1088b93a7f146b8f.jpg",
+    "gt_area_pct": 0.2724609375
+  },
+  {
+    "key": [
+      "14_066_v7",
+      15
+    ],
+    "score": 1.5386383232787941,
+    "best_t_iou": 0.7693191616393971,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0052_bmp_jpg.rf.732b572044aa9ad7dc8066f54d800368.jpg",
+    "gt_area_pct": 0.2734375
+  },
+  {
+    "key": [
+      "14_083_v1",
+      3
+    ],
+    "score": 1.5280212894720926,
+    "best_t_iou": 0.7640106447360463,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 0,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_083_1_0039_bmp_jpg.rf.5a37d10a21afa0aa1dd407256953e90a.jpg",
+    "gt_area_pct": 0.404296875
+  },
+  {
+    "key": [
+      "14_029_v1",
+      21
+    ],
+    "score": 1.482515231109225,
+    "best_t_iou": 0.7412576155546124,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_029_1_0053_bmp_jpg.rf.82aca6c5da136abc815243915e3b4bee.jpg",
+    "gt_area_pct": 0.22900390625
+  },
+  {
+    "key": [
+      "14_066_v7",
+      12
+    ],
+    "score": 1.4537770753076893,
+    "best_t_iou": 0.7268885376538446,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0049_bmp_jpg.rf.303182af4f042eb945901118ff12130f.jpg",
+    "gt_area_pct": 0.2666015625
+  },
+  {
+    "key": [
+      "14_015_v1",
+      42
+    ],
+    "score": 1.4274096812097534,
+    "best_t_iou": 0.8087960318039302,
+    "best_s_iou": 0.1267882549320713,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_015_1_0045_bmp_jpg.rf.39871f523a556ffcdd32cdd46e2ee40e.jpg",
+    "gt_area_pct": 0.556640625
+  },
+  {
+    "key": [
+      "14_066_v7",
+      14
+    ],
+    "score": 1.3982430287812926,
+    "best_t_iou": 0.6991215143906463,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0051_bmp_jpg.rf.8ec998bf7df5c1ab5adc61e869fff6bb.jpg",
+    "gt_area_pct": 0.23968505859375
+  },
+  {
+    "key": [
+      "14_032_v6",
+      37
+    ],
+    "score": 1.395828985543449,
+    "best_t_iou": 0.6979144927717245,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 0,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_032_6_0069_bmp_jpg.rf.f655a8dd00734c2f999225a0f6625e3b.jpg",
+    "gt_area_pct": 0.1875
+  },
+  {
+    "key": [
+      "14_002_v8",
+      14
+    ],
+    "score": 1.3883568600928637,
+    "best_t_iou": 0.6941784300464319,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_002_8_0024_bmp_jpg.rf.8bef73df8ecfc38829b2b7b95f31724f.jpg",
+    "gt_area_pct": 0.302734375
+  },
+  {
+    "key": [
+      "14_066_v7",
+      29
+    ],
+    "score": 1.3834598467050183,
+    "best_t_iou": 0.6917299233525092,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0066_bmp_jpg.rf.c0696ddfef4e22e74952341b9f3de1a8.jpg",
+    "gt_area_pct": 0.2490234375
+  },
+  {
+    "key": [
+      "14_083_v1",
+      5
+    ],
+    "score": 1.3778894305694602,
+    "best_t_iou": 0.6889447152847301,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 0,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_083_1_0041_bmp_jpg.rf.f78764bf0789973c7c11ff36be37953b.jpg",
+    "gt_area_pct": 0.5167236328125
+  },
+  {
+    "key": [
+      "14_002_v8",
+      13
+    ],
+    "score": 1.362324345566205,
+    "best_t_iou": 0.6811621727831025,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_002_8_0023_bmp_jpg.rf.650432385b14d5febc3c1752a019d6ab.jpg",
+    "gt_area_pct": 0.269775390625
+  },
+  {
+    "key": [
+      "14_066_v7",
+      27
+    ],
+    "score": 1.358701338461791,
+    "best_t_iou": 0.6793506692308955,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0064_bmp_jpg.rf.4296cc66b817cc40b8b626c05f89ad02.jpg",
+    "gt_area_pct": 0.299072265625
+  },
+  {
+    "key": [
+      "14_096_v2",
+      4
+    ],
+    "score": 1.3572401968361956,
+    "best_t_iou": 0.6786200984180978,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_096_2_0016_bmp_jpg.rf.a51e46aac488c4d04853cc1eb4c9a00e.jpg",
+    "gt_area_pct": 0.478515625
+  },
+  {
+    "key": [
+      "14_066_v10",
+      36
+    ],
+    "score": 1.322275896923394,
+    "best_t_iou": 0.661137948461697,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 0,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_10_0078_bmp_jpg.rf.6e42a6f4925a62b980d44ce6351e03f4.jpg",
+    "gt_area_pct": 0.1298828125
+  },
+  {
+    "key": [
+      "14_066_v7",
+      10
+    ],
+    "score": 1.2975089388169956,
+    "best_t_iou": 0.6487544694084978,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_066_7_0047_bmp_jpg.rf.410002f3f8de0a2f7c5826a31c4692e3.jpg",
+    "gt_area_pct": 0.26849365234375
+  },
+  {
+    "key": [
+      "14_029_v5",
+      49
+    ],
+    "score": 1.29703280638446,
+    "best_t_iou": 0.64851640319223,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_029_5_0081_bmp_jpg.rf.4fa22c77b798c67589d0c6e5f268ae06.jpg",
+    "gt_area_pct": 0.31103515625
+  },
+  {
+    "key": [
+      "14_002_v8",
+      15
+    ],
+    "score": 1.2796568249834375,
+    "best_t_iou": 0.6398284124917187,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 1,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_002_8_0025_bmp_jpg.rf.292b2ad18e668a551708798d5cbf03fc.jpg",
+    "gt_area_pct": 0.2288818359375
+  },
+  {
+    "key": [
+      "14_083_v1",
+      7
+    ],
+    "score": 1.2740532323420168,
+    "best_t_iou": 0.6370266161710084,
+    "best_s_iou": 0.0,
+    "n_gt": 1,
+    "n_tempo_kept": 1,
+    "n_stqd_kept": 0,
+    "centre_path": "/home/dsa/stenosis/data/dataset2_split/test/images/14_083_1_0043_bmp_jpg.rf.58465f9add1467fb09e40f707fb4f7c6.jpg",
+    "gt_area_pct": 0.4461669921875
+  }
+]

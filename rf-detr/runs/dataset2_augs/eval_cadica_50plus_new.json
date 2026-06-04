@@ -1,0 +1,21 @@
+{
+  "mAP@0.25": 0.3041,
+  "mAR@0.25": 0.9281,
+  "mAP@0.5": 0.0616,
+  "mAR@0.5": 0.5102,
+  "recall@IoU0.25_conf0.15": 0.5134,
+  "precision@IoU0.25_conf0.15": 0.2306,
+  "f1@IoU0.25_conf0.15": 0.3183,
+  "matched_gt@IoU0.25_conf0.15": 1586,
+  "total_gt": 3089,
+  "recall@IoU0.3_conf0.15": 0.449,
+  "precision@IoU0.3_conf0.15": 0.1975,
+  "f1@IoU0.3_conf0.15": 0.2744,
+  "matched_gt@IoU0.3_conf0.15": 1387,
+  "recall@IoU0.5_conf0.15": 0.2341,
+  "precision@IoU0.5_conf0.15": 0.0984,
+  "f1@IoU0.5_conf0.15": 0.1386,
+  "matched_gt@IoU0.5_conf0.15": 723,
+  "name": "dataset2_augs",
+  "num_images": 2215
+}

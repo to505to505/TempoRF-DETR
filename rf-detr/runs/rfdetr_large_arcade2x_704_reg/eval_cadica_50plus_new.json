@@ -1,0 +1,21 @@
+{
+  "mAP@0.25": 0.4741,
+  "mAR@0.25": 0.976,
+  "mAP@0.5": 0.1402,
+  "mAR@0.5": 0.7582,
+  "recall@IoU0.25_conf0.15": 0.6235,
+  "precision@IoU0.25_conf0.15": 0.3315,
+  "f1@IoU0.25_conf0.15": 0.4329,
+  "matched_gt@IoU0.25_conf0.15": 1926,
+  "total_gt": 3089,
+  "recall@IoU0.3_conf0.15": 0.572,
+  "precision@IoU0.3_conf0.15": 0.2954,
+  "f1@IoU0.3_conf0.15": 0.3896,
+  "matched_gt@IoU0.3_conf0.15": 1767,
+  "recall@IoU0.5_conf0.15": 0.3208,
+  "precision@IoU0.5_conf0.15": 0.1545,
+  "f1@IoU0.5_conf0.15": 0.2086,
+  "matched_gt@IoU0.5_conf0.15": 991,
+  "name": "rfdetr_large_arcade2x_704_reg",
+  "num_images": 2215
+}
