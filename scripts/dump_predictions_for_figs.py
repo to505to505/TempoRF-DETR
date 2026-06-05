@@ -1,6 +1,6 @@
 """Dump per-frame predictions + per-IoU AP sweep to JSON for the figure scripts.
 
-kind is "tempo" (rfdetr_video) or "stqd" (stqd_det, from the worktree).
+kind is "tempo" (rfdetr_video) or "stqd" (stqd_det).
 """
 from __future__ import annotations
 
@@ -15,9 +15,7 @@ import numpy as np
 import torch
 
 ROOT = Path(__file__).parent.parent.resolve()
-# append (not insert) so main-repo rfdetr_video wins; worktree is only for stqd_det
 sys.path.insert(0, str(ROOT))
-sys.path.append(str(ROOT / ".claude/worktrees/stqd-det"))
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 IOU_THRESHOLDS = [0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75]

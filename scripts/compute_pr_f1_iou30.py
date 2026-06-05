@@ -26,7 +26,6 @@ import torch
 
 ROOT = Path(__file__).parent.parent.resolve()
 sys.path.insert(0, str(ROOT))
-sys.path.append(str(ROOT / ".claude/worktrees/stqd-det"))
 
 from rfdetr_video.sequence_eval import f1_confidence_sweep
 from rfdetr_video.sequence_dataset import build_sequence_index
