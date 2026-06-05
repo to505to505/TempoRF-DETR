@@ -113,7 +113,6 @@ place each dataset under `data/` following the structure below.
 - **Where to put it:** `data/dataset2_split/`
 - **Expected layout:** `train/`, `val/`, `test/` (patient-disjoint splits), `data.yaml`.
 - Original source: Danilov et al., *Scientific Reports* 11:7582, 2021.
-  Public mirror: [10.6084/m9.figshare.13643940](https://doi.org/10.6084/m9.figshare.13643940).
 
 ### 4.2 ARCADE (stenosis subset)
 
