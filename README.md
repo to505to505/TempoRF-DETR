@@ -11,7 +11,7 @@ TempoRF-DETR is a video extension of [RF-DETR](https://github.com/roboflow/rf-de
 - **Early Temporal Fusion (ETF)** — a single position-wise multi-head attention block inserted between the 2D backbone and the DETR decoder, mixing context across all `T` frames of a clip in one forward pass.
 - **Image-to-video distillation** — a frozen 2D RF-DETR teacher (trained on the union of single-frame and decoded video data) supervises the video student per frame via KD-DETR (specific + general query sampling) and CRRCD (cross-resolution relational contrastive distillation).
 
-Results on the held-out test split: **AP$_{30}$ = 0.581 in-distribution (RIPCID-test), 0.416 out-of-distribution (CADICA)** — see Tables I–III and Discussion in the full thesis (`Dmitrii Sakharov Thesis.pdf`, at the repository root).
+Results on the held-out test split: **AP$_{30}$ = 0.581 in-distribution (RIPCID-test), 0.416 out-of-distribution (CADICA)** — see Tables I–III and Discussion in the full thesis (`Dmitrii Sakharov Final Thesis.pdf`, at the repository root).
 
 ---
 
@@ -20,7 +20,7 @@ Results on the held-out test split: **AP$_{30}$ = 0.581 in-distribution (RIPCID-
 ```
 stenosis_thesis_submission/
 ├── README.md
-├── Dmitrii Sakharov Thesis.pdf              # Final thesis (full PDF)
+├── Dmitrii Sakharov Final Thesis.pdf        # Final thesis (full PDF)
 ├── requirements.txt
 ├── .gitignore
 │
