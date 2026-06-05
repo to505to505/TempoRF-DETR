@@ -294,4 +294,4 @@ Full bibliography in [`thesis/stenosis.bib`](thesis/stenosis.bib) and inline in 
 ## 10. Contact
 
 Dmitrii Sakharov — `dmitrii.sakharov04@gmail.com`
-Supervisor(s): Yusuf Can Semeri, Mark Punt (Maastricht University, Faculty of Science and Engineering).
+Supervisor(s): Yusuf Can Semeri, Mark Punt.
