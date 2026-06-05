@@ -108,7 +108,7 @@ place each dataset under `data/` following the structure below.
 
 ### 4.1 RIPCID (called `dataset2_split` in code)
 
-- Primary in-distribution dataset (videos from 64 patients, Philips Azurion 3 + Siemens Artis Zee).
+- Primary in-distribution dataset (videos from 64 patients, Coroscop/Siemens + Innova/GE Healthcare).
 - **License / access:** publicly available — open-access dataset released with the source paper; download from the figshare mirror listed below.
 - **Where to put it:** `data/dataset2_split/`
 - **Expected layout:** `train/`, `val/`, `test/` (patient-disjoint splits), `data.yaml`.
