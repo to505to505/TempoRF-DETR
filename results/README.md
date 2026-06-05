@@ -42,7 +42,7 @@ python scripts/wilcoxon_per_model_bootstrap.py     > results/wilcoxon_per_model_
 python scripts/wilcoxon_table1_ablation_steps.py   > results/wilcoxon_table1_ablation_steps.txt
 
 # Tables I/II/III rows (requires data/ to be downloaded first)
-python scripts/eval_video_run.py --run rfdetr_video/runs/video_overfit_R1
+python scripts/eval_video_run.py video_overfit_R1
 python scripts/eval_baseline_detnet.py
 python scripts/eval_baseline_psstt.py
 # (etc. — see project README §6 for full per-row commands)

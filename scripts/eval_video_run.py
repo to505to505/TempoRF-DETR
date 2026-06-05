@@ -15,15 +15,15 @@ import cv2
 import numpy as np
 import torch
 
+ROOT = Path(__file__).parent.parent.resolve()
+sys.path.insert(0, str(ROOT))
+
 from rfdetr_video.config import Config
 from rfdetr_video.model import VideoRFDETR, build_criterion
 from rfdetr_video.sequence_dataset import build_sequence_index
 from rfdetr_video.sequence_eval import evaluate_map, f1_confidence_sweep
 
-ROOT = Path(__file__).parent.parent.resolve()
-import sys as _sys
-_sys.path.insert(0, str(ROOT))
-RUN_NAME = "stfs_nodistill_v4_tempdropout_new"
+RUN_NAME = "video_overfit_R1"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 IOU_5095 = np.arange(0.5, 1.0, 0.05)
 LINK_IOU = 0.3

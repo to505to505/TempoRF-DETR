@@ -13,11 +13,9 @@ scipy>=1.10
 Pillow>=9.0
 opencv-python-headless>=4.8
 albumentations>=2.0
-cupy-cuda12x>=13.0
 
 # Data handling
 pandas>=2.0
-polars
 
 # RF-DETR training stack
 rfdetr>=1.6.0
@@ -31,7 +29,6 @@ tqdm>=4.60
 matplotlib>=3.5
 tensorboard>=2.14
 wandb
-b2
 
 # Tests (README section 8 smoke tests)
 pytest>=7.0

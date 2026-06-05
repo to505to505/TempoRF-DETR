@@ -172,7 +172,7 @@ If the **DINOv2 backbone weights** (`rf-detr-{nano,small}.pth`) are missing at f
 Only the **final TempoRF-DETR weight is bundled** (`rfdetr_video/runs/video_overfit_R1/best.pth`), so the only eval that runs out-of-the-box is:
 
 ```bash
-python scripts/eval_video_run.py --run rfdetr_video/runs/video_overfit_R1
+python scripts/eval_video_run.py video_overfit_R1
 # Expected: AP30 ≈ 0.581 in-dist (RIPCID-test), 0.416 OOD (CADICA)
 ```
 
