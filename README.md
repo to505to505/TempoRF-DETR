@@ -1,7 +1,6 @@
 # TempoRF-DETR: Video-Based Coronary Stenosis Detection with Image-to-Video Distillation
 
 Bachelor thesis code submission — Dmitrii Sakharov, Maastricht University, 2026.
-Full writeup: [`thesis/conference.pdf`](thesis/conference.pdf).
 
 ---
 
@@ -12,7 +11,7 @@ TempoRF-DETR is a video extension of [RF-DETR](https://github.com/roboflow/rf-de
 - **Early Temporal Fusion (ETF)** — a single position-wise multi-head attention block inserted between the 2D backbone and the DETR decoder, mixing context across all `T` frames of a clip in one forward pass.
 - **Image-to-video distillation** — a frozen 2D RF-DETR teacher (trained on the union of single-frame and decoded video data) supervises the video student per frame via KD-DETR (specific + general query sampling) and CRRCD (cross-resolution relational contrastive distillation).
 
-Results on the held-out test split: **AP$_{30}$ = 0.581 in-distribution (RIPCID-test), 0.416 out-of-distribution (CADICA)** — see Tables I–III and Discussion in the thesis.
+Results on the held-out test split: **AP$_{30}$ = 0.581 in-distribution (RIPCID-test), 0.416 out-of-distribution (CADICA)** — see Tables I–III and Discussion in the full thesis (`Dmitrii Sakharov Thesis.pdf`, at the repository root).
 
 ---
 
@@ -21,6 +20,7 @@ Results on the held-out test split: **AP$_{30}$ = 0.581 in-distribution (RIPCID-
 ```
 stenosis_thesis_submission/
 ├── README.md
+├── Dmitrii Sakharov Thesis.pdf              # Final thesis (full PDF)
 ├── requirements.txt
 ├── .gitignore
 │
@@ -73,7 +73,7 @@ stenosis_thesis_submission/
 │   ├── wilcoxon_per_model_bootstrap.txt     # Per-model AP30 + bootstrap CI
 │   └── README.md
 │
-├── thesis/                                  # LaTeX source + final PDF + figures
+├── thesis/                                  # LaTeX source + compiled paper PDF + figures
 │   ├── conference.tex, conference.pdf
 │   ├── TempoRF-DETR_final.{pdf,svg}, Distillation_final_v2.{pdf,svg}
 │   ├── fig_bbox_sizes.pdf, fig_methods_bar.pdf, fig_qualitative.pdf, fig_ap_iou.pdf
@@ -120,21 +120,11 @@ place each dataset under `data/` following the structure below.
 - Single-frame ARCADE dataset filtered to the stenosis class — used by the 2D teacher only.
 - **License:** CC-BY 4.0.
 - **Where to put it:** `data/stenosis_arcade/`
-- **Download (Python):**
-
-  ```python
-  from huggingface_hub import snapshot_download
-  snapshot_download(repo_id='to505to505/stenosis_arcade',
-                    repo_type='dataset',
-                    local_dir='data/stenosis_arcade')
-  ```
-
-  or via CLI: `huggingface-cli download to505to505/stenosis_arcade --repo-type dataset --local-dir data/stenosis_arcade`.
 - Original source: Popov et al., *Scientific Data* 11:20, 2024 — [ARCADE on Zenodo](https://zenodo.org/records/10390295).
 
 ### 4.3 CADICA (≥50% stenosis subset)
 
-- Out-of-distribution test set (28 patients, Siemens Artis Zee).
+- Out-of-distribution test set (Siemens Artis Zee).
 - **License:** CC-BY 4.0.
 - **Where to put it:** `data/cadica_50plus_new/`
 - **How to obtain:** download the full CADICA release from [Mendeley Data DOI 10.17632/p9bpx9ctcv.1](https://data.mendeley.com/datasets/p9bpx9ctcv/1), keep only sequences with ground-truth lesion grade ≥50%, and extract centre-frames as documented in the original CADICA paper (Jiménez-Partinen et al., 2024 — [arXiv:2402.00570](https://arxiv.org/abs/2402.00570)).

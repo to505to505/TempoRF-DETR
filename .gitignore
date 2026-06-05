@@ -22,7 +22,7 @@ wandb/
 *.bbl
 *.blg
 *.out
-
+*.zip
 
 rf-detr/rf-detr-nano.pth
 rf-detr/rf-detr-small.pth
